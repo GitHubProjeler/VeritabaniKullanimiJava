@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main">
+
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/surnameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/ageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surnameText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="94dp"
+        android:text="ekle" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ageText"
+        android:layout_alignLeft="@+id/insert"
+        android:layout_alignTop="@+id/insert"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="-155dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="41dp"
+        android:layout_toStartOf="@+id/insert"
+        android:text="göster" />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@id/insert">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="5dp"
+           android:textSize="24dp"
+           android:id="@+id/fechteddata"
+           android:hint="Data Here"/>
+   </ScrollView>
+
+
+</RelativeLayout>
